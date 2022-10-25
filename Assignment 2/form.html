@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registeration Form</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: wavy;
+      }
+      * {
+        box-sizing: border-box;
+        font-style: italic;
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      input[type="text"],
+      select,
+      textarea {
+        width: 40%;
+        padding: 12px;
+        border: 1px solid rgb(173, 27, 27);
+        border-radius: 4px;
+        resize: vertical;
+      }
+      input[type="submit"] {
+        background-color: #1eb676;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+        margin: 20px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #020c03;
+      }
+      .container {
+        border-radius: 5px;
+        background-color: #7e6e6e;
+        padding: 20px;
+        width: 100%;
+      }
+      .col-1 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+      .col-2 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Registeration Form</h1>
+    <div class="container">
+      <form action="backend.php">
+        <div class="row">
+          <div class="col-1">
+            <label for="name"> Name </label>
+          </div>
+          <div class="col-2">
+            <input
+              type="text"
+              id="myname"
+              name="name"
+              placeholder="Your Name...."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="email"> Email </label>
+          </div>
+          <div class="col-2">
+            <input
+              type="email"
+              id="myemail"
+              name="email"
+              placeholder="Your Email...."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="number"> Phone </label>
+          </div>
+          <div class="col-2">
+            <input
+              type="number"
+              id="mynumber"
+              name="number"
+              placeholder="Your Number...."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="number"> Gender </label>
+          </div>
+          <div class="col-2">
+            <select id="mygender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1">
+            <label for="name"> Address </label>
+          </div>
+          <div class="col-2">
+            <input
+              type="text"
+              id="myaddress"
+              name="name"
+              placeholder="Your Address...."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="name"> Pincode </label>
+          </div>
+          <div class="col-2">
+            <input
+              type="number"
+              id="mypincode"
+              name="name"
+              placeholder="Your Pincode...."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="name"> Password </label>
+          </div>
+          <div class="col-2">
+            <input
+              type="number"
+              id="mypassword1"
+              name="name"
+              placeholder="Your Password...."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="name"> Confirm Password </label>
+          </div>
+          <div class="col-2">
+            <input
+              type="number"
+              id="mypassword2"
+              name="name"
+              placeholder="Your Password..."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="name"> I Agree </label>
+          </div>
+          <div class="col-2">
+            <input type="checkbox" id="myagreement" name="name" />
+          </div>
+          <br />
+          <div class="row">
+            <input type="submit" value="Submit" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

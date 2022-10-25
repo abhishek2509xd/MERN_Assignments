@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript 1</title>
+  </head>
+  <body>
+    <script>
+      let n = Number(prompt("Enter the number of elements"));
+      const A = new Array();
+      for (let i = 0; i < n; i++) {
+        A.push(Number(prompt("Enter " + (i + 1) + " element")));
+      }
+      let s = 0;
+      for (let i = 0; i < n; i++) {
+        let x = A.pop();
+        if (x > 0 && x % 2 == 0 && x % 3 == 0) {
+          s += x;
+        }
+      }
+      console.log("Sum = " + s);
+    </script>
+  </body>
+</html>

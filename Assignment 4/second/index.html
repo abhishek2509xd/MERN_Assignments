@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .container {
+        margin: auto;
+        float: center;
+        width: 50%;
+        padding: 20px 25px 30px 3px;
+        background-color: aqua;
+      }
+      .form {
+        width: 200%;
+        margin: 10px 5px;
+      }
+      input[type="text"] {
+        width: 50%;
+      }
+      input[type="submit"] {
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        background-color: blueviolet;
+        color: brown;
+        border-radius: 12px;
+        font-size: 16px;
+        float: center;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <h1 style="color: aqua; text-align: center">Form</h1>
+    <div id="msg" align="center"></div>
+    <div class="container">
+      <form>
+        <div class="container">
+          <div class="form">
+            Name:
+            <input
+              type="text"
+              name="fullname"
+              id="name"
+              value=""
+              placeholder="Full Name"
+            />
+          </div>
+          <div class="form">
+            EMail:<input
+              type="email"
+              name="email"
+              id="email"
+              value=""
+              placeholder=" @gmail.com"
+            />
+          </div>
+          <div class="form">
+            Phone:<input
+              type="tel"
+              name="tel"
+              id="Phone"
+              value=""
+              placeholder="Mobile Number"
+            />
+          </div>
+          <div class="form">
+            Gender:<br /><input type="radio" name="radio" value="Male" />Male
+            <br />
+            <input type="radio" name="radio" value="Female" />Female
+          </div>
+          <div class="form">
+            Address:<br /><textarea
+              cols="50"
+              rows="4"
+              id="address"
+              value=""
+              placeholder=" Address"
+            ></textarea>
+          </div>
+          <div class="form">
+            Pincode:<input
+              type="Pincode"
+              id="pincode"
+              name="pincode"
+              placeholder="Pincode"
+            />
+          </div>
+          <div class="form">
+            Password:<input
+              type="password"
+              id="password"
+              name="passwword"
+              placeholder="Password"
+            /><br /><br />
+            Confirm Password:<input
+              type="password"
+              id="password1"
+              name="confirm password"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <div class="form">
+            <input type="checkbox" id="iagree" name="i agree" /> I agree with
+            all the terms and conditions
+          </div>
+          <div class="form">
+            <input type="submit" name="submit" value="submit" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
